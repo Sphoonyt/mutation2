@@ -5,13 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
-        with:
-          java-version: '21'
-          distribution: 'temurin'
-      - run: mvn clean package
-        working-directory: "mutations-plugin-source (2)/mutations"
-      - uses: actions/upload-artifact@v4
-        with:
-          name: Mutations-Plugin
-          path: "mutations-plugin-source (2)/mutations/target/Mutations-1.0.0.jar"
+      - run: find . -name "pom.xml" -o -name "*.java" | head -20
