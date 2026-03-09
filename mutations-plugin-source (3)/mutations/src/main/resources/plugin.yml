@@ -1,0 +1,26 @@
+name: Mutations
+version: 1.0.0
+main: com.plugin.mutations.MutationsPlugin
+api-version: "1.21"
+description: Custom mutation abilities plugin
+authors: [PluginDev]
+
+commands:
+  mutation:
+    description: Manage player mutations
+    usage: /mutation <set|remove|list|info> [player] [mutation]
+    permission: mutations.admin
+    permission-message: You don't have permission to use this command.
+  ability:
+    description: Activate a mutation ability
+    usage: /ability <1|2|3>
+    permission: mutations.use
+    permission-message: You don't have permission to use abilities.
+
+permissions:
+  mutations.admin:
+    description: Allows management of mutations
+    default: op
+  mutations.use:
+    description: Allows use of mutations
+    default: true
