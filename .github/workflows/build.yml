@@ -14,4 +14,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: Mutations-Plugin
-          path: "mutations-plugin-1.0.0/mutations/target/M
+          path: "mutations-plugin-1.0.0/mutations/target/Mutations-1.0.0.jar"
