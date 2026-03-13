@@ -1,6 +1,4 @@
-- name: Clear corrupted Maven cache
-  run: rm -rf ~/.m2/repository/org/apache/maven/resolver/
-  name: Build Plugin
+name: Build Plugin
 on: [push]
 jobs:
   build:
@@ -11,6 +9,8 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
+      - name: Clear corrupted Maven cache
+        run: rm -rf ~/.m2/repository/org/apache/maven/resolver/
       - run: mvn clean package
         working-directory: "mutations-plugin-1.0.1/mutations"
       - uses: actions/upload-artifact@v4
