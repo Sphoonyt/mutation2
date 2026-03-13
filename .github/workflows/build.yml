@@ -1,4 +1,6 @@
-name: Build Plugin
+- name: Clear corrupted Maven cache
+  run: rm -rf ~/.m2/repository/org/apache/maven/resolver/
+  name: Build Plugin
 on: [push]
 jobs:
   build:
