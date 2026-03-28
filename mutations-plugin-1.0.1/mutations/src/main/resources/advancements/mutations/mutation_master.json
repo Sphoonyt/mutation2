@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": { "id": "minecraft:nether_star" },
+    "title": { "text": "Mutation Master", "color": "gold" },
+    "description": { "text": "Obtain one of every mutation (Dragonborne excluded).", "color": "gray" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mutations:mutations/root",
+  "criteria": {
+    "trigger": { "trigger": "minecraft:impossible" }
+  }
+}
