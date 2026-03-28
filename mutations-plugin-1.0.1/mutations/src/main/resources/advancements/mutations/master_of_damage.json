@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": { "id": "minecraft:diamond_sword" },
+    "title": { "text": "Master of Damage", "color": "dark_red" },
+    "description": { "text": "Use all damaging abilities on enemies (Dragonborne excluded).", "color": "gray" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mutations:mutations/root",
+  "criteria": {
+    "trigger": { "trigger": "minecraft:impossible" }
+  }
+}
