@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": { "id": "minecraft:diamond_sword" },
+    "title": { "text": "Master of Damage", "color": "dark_red" },
+    "description": { "text": "Use all damaging abilities on enemies (Dragonborne excluded).", "color": "gray" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "mutations:mutations/root",
+  "requirements": [
+    ["wind_a1"], ["wind_a2"], ["frozen_a1"], ["bypass_a3"],
+    ["rock_a1"], ["rock_a3"],
+    ["hellfire_a1"], ["hellfire_a2"], ["hellfire_a3"],
+    ["dragonborne_light_a1"], ["dragonborne_light_a2"],
+    ["love_a1"], ["love_a2"],
+    ["shadow_a3"], ["lightning_a3"],
+    ["nature_a2"], ["nature_a3"],
+    ["blood_a1"], ["debuff_a1"]
+  ],
+  "criteria": {
+    "wind_a1":              { "trigger": "minecraft:impossible" },
+    "wind_a2":              { "trigger": "minecraft:impossible" },
+    "frozen_a1":            { "trigger": "minecraft:impossible" },
+    "bypass_a3":            { "trigger": "minecraft:impossible" },
+    "rock_a1":              { "trigger": "minecraft:impossible" },
+    "rock_a3":              { "trigger": "minecraft:impossible" },
+    "hellfire_a1":          { "trigger": "minecraft:impossible" },
+    "hellfire_a2":          { "trigger": "minecraft:impossible" },
+    "hellfire_a3":          { "trigger": "minecraft:impossible" },
+    "dragonborne_light_a1": { "trigger": "minecraft:impossible" },
+    "dragonborne_light_a2": { "trigger": "minecraft:impossible" },
+    "love_a1":              { "trigger": "minecraft:impossible" },
+    "love_a2":              { "trigger": "minecraft:impossible" },
+    "shadow_a3":            { "trigger": "minecraft:impossible" },
+    "lightning_a3":         { "trigger": "minecraft:impossible" },
+    "nature_a2":            { "trigger": "minecraft:impossible" },
+    "nature_a3":            { "trigger": "minecraft:impossible" },
+    "blood_a1":             { "trigger": "minecraft:impossible" },
+    "debuff_a1":            { "trigger": "minecraft:impossible" }
+  }
+}
